@@ -30,7 +30,7 @@ void setup() {
   //Setup Servo ---------------------------------------------------------------
   wheel_servo.attach(9);       //attaches the servo on pin 9 to the servo object
 
-  Serial.begin(9600);
+  //Serial.begin(9600);
 
 }
 
@@ -45,7 +45,7 @@ void loop() {
   //Only start a spin if the button has been pressed. 
   if (button_status == 1)
   {
-    Serial.println("Hello Addie");
+    //Serial.println("Hello Addie");
 
     wheel_servo.write(90);
   }
@@ -54,4 +54,5 @@ void loop() {
     wheel_servo.write(0);
   }
   
+  delay(1000);
 }
