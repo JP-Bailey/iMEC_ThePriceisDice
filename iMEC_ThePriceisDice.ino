@@ -4,20 +4,15 @@
 * @Version 0.0
 */  
 
+
+//Includes 
 #include <Servo.h>
 
-//
-//Defines
-//
-
-//
-//Objects
-//
 
 //
 //global(s)
 //
-unsigned int button_status = 0;
+ //Var to store the value of the button
 
 Servo wheel_servo;
 
@@ -25,7 +20,7 @@ void setup() {
   // put your setup code here, to run once:
 
   //Setup Servo ---------------------------------------------------------------
-  wheel_servo.attach(9);       //attaches the servo on pin 9 to the servo object
+         //attaches the servo to the servo object
 
 }
 
@@ -37,9 +32,5 @@ void loop() {
   //Read the status of the button. 
 
   //Only start a spin if the button has been pressed. 
-  if (button_status == 1)
-  {
-
-  }
 
 }
